@@ -1,7 +1,7 @@
 export const data = [
   {
     id: 1,
-    productName: "Margarina",
+    productName: "Samsung",
     price: 999.0,
     
   },
@@ -13,37 +13,37 @@ export const data = [
   },
   {
     id: 3,
-    productName: "Camera filmat",
+    productName: "Tech Camera",
     price: 699.0,
     
   },
   {
     id: 4,
-    productName: "Drona subacvatica",
+    productName: "Drone",
     price: 228.0,
     
   },
   {
     id: 5,
-    productName: "Luninite craciun",
+    productName: "Car",
     price: 19.99,
     
   },
   {
     id: 6,
-    productName: "Copac",
+    productName: "Laptop",
     price: 68.0,
     
   },
   {
     id: 7,
-    productName: "Golf 4 adus din Germania ",
+    productName: "Golf 4 ",
     price: 120.0,
     
   },
   {
     id: 8,
-    productName: "O palarie",
+    productName: "Hat",
     price: 40.0,
     
   },
