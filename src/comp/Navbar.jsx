@@ -6,7 +6,7 @@ import { ShopContext } from '../context';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
-    const {handleShow} = useContext(ShopContext)
+    const {handleShow,search,setSearch} = useContext(ShopContext)
   return (
     <div className="navbar">
         <div className="navbar-content">
@@ -15,7 +15,7 @@ const Navbar = () => {
                 <button className='nav-toggle' onClick={()=>handleShow()}><FaBars/></button>
             </div>
             <div className="navbar-input">
-                <input type="text" placeholder='type' />
+                <input type="text" placeholder='type' value={search} onChange={(e)=>setSearch(e.target.value)} />
                 <button>Search</button>
             </div>
             <div className="navbar-cart">

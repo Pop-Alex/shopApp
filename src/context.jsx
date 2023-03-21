@@ -13,7 +13,7 @@ const getCart = ()=>{
  export const ContextProvider = ({children}) => {
     const [cartItems,seCarttItems] = useState(getCart())
     const [show,setShow] = useState(false)
-
+    const [search,setSearch] = useState('')
     
     const handleShow = ()=>{
         setShow(!show)
@@ -46,6 +46,8 @@ const getCart = ()=>{
         show,
         setShow,
         amount,
+        search,
+        setSearch,
     }
   return (
     <ShopContext.Provider value={
