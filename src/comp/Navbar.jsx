@@ -6,7 +6,7 @@ import { ShopContext } from '../context';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
-    const {handleShow,search,setSearch} = useContext(ShopContext)
+    const {handleShow,search,setSearch,cartAmount} = useContext(ShopContext)
   return (
     <div className="navbar">
         <div className="navbar-content">
@@ -22,9 +22,10 @@ const Navbar = () => {
                 <Link to='cart'>
                 <BsFillCartFill />
                 <button>Cart</button>
+                
                 </Link>
                 
-                <p className='quantity'>1 </p>
+                <p className='quantity'>{cartAmount.length} </p>
             </div>
         </div>
     </div>

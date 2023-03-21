@@ -14,12 +14,17 @@ const getCart = ()=>{
     const [cartItems,seCarttItems] = useState(getCart())
     const [show,setShow] = useState(false)
     const [search,setSearch] = useState('')
+    const [cartAmount,setCartAmount] = useState([])
+
+    
+    
     
     const handleShow = ()=>{
         setShow(!show)
     }
     const addCart = (itemId)=>{
         seCarttItems((prev)=>({...prev, [itemId]: prev[itemId] + 1}))
+        setCartAmount([...cartAmount,{...itemId}])
     }
 
     const removeCart = (itemId)=>{
@@ -48,6 +53,7 @@ const getCart = ()=>{
         amount,
         search,
         setSearch,
+        cartAmount,
     }
   return (
     <ShopContext.Provider value={
