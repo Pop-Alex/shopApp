@@ -11,7 +11,7 @@ const Navbar = () => {
     <div className="navbar">
         <div className="navbar-content">
             <div className="navbar-logo">
-                <Link to='/'><h1 className='logo'>Logo</h1></Link>
+                <Link style={{ textDecoration: 'none' }} to='/'><h1 className='logo'>Logo</h1></Link>
                 <button className='nav-toggle' onClick={()=>handleShow()}><FaBars/></button>
             </div>
             <div className="navbar-input">

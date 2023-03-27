@@ -5,6 +5,7 @@ import Navbar from './comp/Navbar'
 import Sidebar from './comp/Sidebar';
 import About from './pages/About'
 import Cart from './pages/Cart'
+import image from './images/cat.jpeg'
 function App() {
   return (
     <div>

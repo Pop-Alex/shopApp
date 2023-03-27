@@ -30,6 +30,7 @@ const getCart = ()=>{
     const removeCart = (itemId)=>{
         seCarttItems((prev)=>({...prev, [itemId]: prev[itemId] - 1}))
     }
+    
 
    const amount = () => {
     let totalAmount = 0;
@@ -54,6 +55,7 @@ const getCart = ()=>{
         search,
         setSearch,
         cartAmount,
+        
     }
   return (
     <ShopContext.Provider value={
